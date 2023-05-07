@@ -1,0 +1,268 @@
+/* Start Variables */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0F0E0F;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Variables */
+/* Start nav  */
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #0E0E0E;
+    height: 80px;
+    margin: 0;
+    border-bottom: 1px solid #202020;
+} 
+.logo {
+    font-size: 26px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.logo:hover {
+    color: #901111;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.nav .container .main-nav ul{
+    display: flex;
+}
+.nav .container .main-nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 30px;
+    font-size: 18px;
+    color: #ffff;
+}
+.nav .container .main-nav ul li a:hover{
+    color: #901111;
+    transition: 0.3s ;
+}
+/* End nav */
+/* start main */
+.main ,.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+table {
+    justify-content: center;
+    margin:25px 0;
+    align-items: center;
+    font-size: 16px;
+    min-width: 400px;
+    border-collapse: collapse;
+}
+table thead tr {
+    background-color: #901111;
+}
+table th td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-radius: 50%;
+}
+table tbody tr a img {
+    max-width: 280px;
+    max-height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 4%;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+table tbody tr a img:hover {
+    animation: vibrate 0.5s;
+    animation-iteration-count: infinite;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+/* end main */
+/* start details */
+.details {
+    position: relative;
+}
+.details .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 80px;
+    border: 1px solid #202020;
+}
+
+.details .container .list {
+    display: flex;
+    margin: 10px;
+}
+.details .container .list ul {
+    color: #fff;
+    direction:rtl;
+    align-items: center;
+    background-color: #0C0C0C;
+    border: 1px solid #202020;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+.details .container .list ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #202020;
+}
+.details .container .list ul li:nth-last-child {
+    border: none;
+}
+.details .container .vid video{
+    width:500px;
+    height:350px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.details .container .image img{
+    width: 400px;
+    height:350px; 
+    border-radius: 10%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* end details */
+/* sign-box */
+
+.sign-box .container {
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width:390px;
+    height: 620px;
+    background-color: #fff;
+}
+.sign-box .container form {
+    text-align: center;
+}
+.sign-box .container form h3 {
+    text-align: center;
+    color: #901111;
+    font-size: 30px;
+    font-weight: 700;
+}
+.sign-box .container form input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    border: 1px solid #901111;
+}
+.sign-box .container form input:focus {
+    background-color: #ddd;
+}
+.sign-box .container form .btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #901111;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.sign-box .container form .btn a:hover {
+    background-color: #bb0000;
+    transition: 0.3s ease;
+} 
+/* sign-box */
+@keyframes vibrate {
+    0% {
+        transform:scale(1deg);
+    }
+
+    10% {
+        transform: rotate(-1deg);
+    }
+
+    20% {
+        transform: rotate(1deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(-1deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(-1deg);
+    }
+
+    80% {
+        transform: rotate(1deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-1deg);
+    }
+}
